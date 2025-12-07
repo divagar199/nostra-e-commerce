@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="images/myfavicon.png">
+    <title>Collection | Nostra</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="logo">
+            <h1>Nostra</h1>
+        </div>
+        <div class="nav-links" id="navLinks">
+            <i class="fa-solid fa-xmark close-icon" onclick="toggleMenu()"></i>
+            <a href="index.html">Home</a>
+            <a href="collection.html" class="active">Collection</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <div class="nav-icons">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <a href="login.html"><i class="fa-regular fa-user"></i></a>
+            <i class="fa-solid fa-bag-shopping"></i>
+            <i class="fa-solid fa-bars menu-icon" onclick="toggleMenu()"></i>
+        </div>
+    </nav>
+
+    <div class="search-container container">
+        <input type="text" id="searchInput" placeholder="Search for products...">
+    </div>
+
+    <div class="collection-container container">
+
+        <aside class="sidebar">
+
+            <h3 class="no_filter">Filters</h3>
+
+            <div class="filter-group">
+                <h4>Gender</h4>
+                <label class="col-fil"><input type="checkbox" name="gender" value="mens"> Mens</label>
+                <label class="col-fil"><input type="checkbox" name="gender" value="female"> Womens</label>
+            </div>
+
+            <div class="filter-group">
+                <h4>Brand</h4>
+                <label class="col-fil"><input type="checkbox" name="brand" value="armani"> Armani</label>
+                <label class="col-fil"><input type="checkbox" name="brand" value="calvinklein"> Calvin Klein</label>
+                <label class="col-fil"><input type="checkbox" name="brand" value="gucci"> Gucci</label>
+                <label class="col-fil"><input type="checkbox" name="brand" value="chanel"> Chanel</label>
+                <label class="col-fil"><input type="checkbox" name="brand" value="prada"> Prada</label>
+                <label class="col-fil"><input type="checkbox" name="brand" value="dior"> Dior</label>
+                <label class="col-fil"><input type="checkbox" name="brand" value="louisvuitton"> Louis Vuitton</label>
+                <label class="col-fil"><input type="checkbox" name="brand" value="guess"> Guess</label>
+                <label class="col-fil"><input type="checkbox" name="brand" value="hermes"> Hermes</label>
+
+            </div>
+            <div class="filter-group">
+                <h4>Category</h4>
+                <label class="col-fil"><input type="checkbox" name="category" value="shirt"> Shirts</label>
+                <label class="col-fil"><input type="checkbox" name="category" value="t-shirt"> T-shirts</label>
+                <label class="col-fil"><input type="checkbox" name="category" value="dress"> Dresses</label>
+                <label class="col-fil"><input type="checkbox" name="category" value="pants"> Pants</label>
+                <label class="col-fil"><input type="checkbox" name="category" value="jacket"> Jacket</label>
+                <label class="col-fil"><input type="checkbox" name="category" value="handbag"> Handbag</label>
+                <label class="col-fil"><input type="checkbox" name="category" value="sunglases"> Sunglases</label>
+                <label class="col-fil"><input type="checkbox" name="category" value="nacklaces"> Necklaces</label>
+                <label class="col-fil"><input type="checkbox" name="category" value="footware"> Footware</label>
+                <label class="col-fil"><input type="checkbox" name="category" value="watch"> Watch</label>
+                <label class="col-fil"><input type="checkbox" name="category" value="cap"> Cap</label>
+            </div>
+            <div class="filter-group">
+                <h4>Material</h4>
+                <label class="col-fil"><input type="checkbox" name="material" value="cotton"> cotton</label>
+                <label class="col-fil"><input type="checkbox" name="material" value="wool"> Wool</label>
+                <label class="col-fil"><input type="checkbox" name="material" value="linen"> Linen</label>
+                <label class="col-fil"><input type="checkbox" name="material" value="leather"> Leather</label>
+                <label class="col-fil"><input type="checkbox" name="material" value="viscose"> Viscose</label>
+                <label class="col-fil"><input type="checkbox" name="material" value="polyester"> Polyester</label>
+                <label class="col-fil"><input type="checkbox" name="material" value="steel"> Steel</label>
+                <label class="col-fil"><input type="checkbox" name="material" value="Denim"> Denim</label>
+            </div>
+
+        </aside>
+
+        <main class="products-main">
+            <div class="product-grid" id="productContainer">
+
+                <div class="product-card" data-tags="mens armani shirt white cotton"> <!-- 1 -->
+                    <div class="product-img-container">
+                        <img src="https://assets-cf.armani.com/image/upload/f_auto,q_auto:best,ar_4:5,w_1350,c_fill/8NZC50_ZNCFZ_1100_F_FW2025.jpg"
+                            alt="White Shirt">
+                    </div>
+                    <div class="product-info">
+                        <h4>Regular fit cotton shirt</h4>
+                        <h6>A|X</h6>
+                        <p>₹9894.40</p>
+                    </div>
+                </div>
+                <div class="product-card" data-tags="mens armani shirt viscose "> <!-- 2 -->
+                    <div class="product-img-container">
+                        <img src="https://assets-cf.armani.com/image/upload/f_auto,q_auto:best,ar_4:5,w_1350,c_fill/XM001956_AF13184_F8042_F_FW2025.jpg"
+                            alt="print Shirt">
+                    </div>
+                    <div class="product-info">
+                        <h4>Slim fit shirt with shaded print</h4>
+                        <h6>A|X</h6>
+                        <p>₹10894.40</p>
+                    </div>
+                </div>
+                <div class="product-card" data-tags="mens armani t-shirt cotton "> <!-- 3 -->
+                    <div class="product-img-container">
+                        <img src="https://assets-cf.armani.com/image/upload/f_auto,q_auto:best,ar_4:5,w_1350,c_fill/XM001463_AF10356_UC001_F_FW2025.jpg"
+                            alt="t-Shirt">
+                    </div>
+                    <div class="product-info">
+                        <h4>Regular T-shirt with logo</h4>
+                        <h6>A|X</h6>
+                        <p>₹6894.40</p>
+                    </div>
+                </div>
+                <div class="product-card" data-tags="mens armani footware leather "> <!-- 4 -->
+                    <div class="product-img-container">
+                        <img src="https://assets-cf.armani.com/image/upload/f_auto,q_auto:best,ar_4:5,w_1350,c_fill/XUX090_XV276_MB373_F_FW2025.jpg"
+                            alt="footware">
+                    </div>
+                    <div class="product-info">
+                        <h4>ECO-SUEDE COLOR BLOCK LOGO SNEAKERS</h4>
+                        <h6>A|X</h6>
+                        <p>₹17894.65</p>
+                    </div>
+                </div>
+                <div class="product-card" data-tags="mens armani denim cap"> <!-- 5 -->
+                    <div class="product-img-container">
+                        <img src="https://cdn.fynd.com/v2/falling-surf-7c8bb8/fyprod/wrkr/products/pictures/item/free/original/000000410533139002/n9Cr2JwIY14-8059797686760_1_1.jpg"
+                            alt="caps">
+                    </div>
+                    <div class="product-info">
+                        <h4>Men Grey Logo Execution Caps</h4>
+                        <h6>A|X</h6>
+                        <p>₹6894.65</p>
+                    </div>
+                </div>
+                <div class="product-card" data-tags="female armani shirt viscose"> <!-- 6 -->
+                    <div class="product-img-container">
+                        <img src="https://cdn.fynd.com/v2/falling-surf-7c8bb8/fyprod/wrkr/products/pictures/item/free/original/000000410521730004/8T-UzDMnG--410521730004_1_1.jpg"
+                            alt="shirt">
+                    </div>
+                    <div class="product-info">
+                        <h4>Women's Full Sleeves Icon Project Shirt</h4>
+                        <h6>A|X</h6>
+                        <p>₹12894.05</p>
+                    </div>
+                </div>
+                <div class="product-card" data-tags="female armani sunglases "> <!-- 7 -->
+                    <div class="product-img-container">
+                        <img src="https://cdn.fynd.com/v2/falling-surf-7c8bb8/fyprod/wrkr/products/pictures/item/free/original/000000410383101001/cawQ2vj-t4-0AX4130SU81588G56-(2).jpg"
+                            alt="cooler">
+                    </div>
+                    <div class="product-info">
+                        <h4>Black Cat Eye Full Rim Sunglasses</h4>
+                        <h6>A|X</h6>
+                        <p>₹7894.05</p>
+                    </div>
+                </div>
+                <div class="product-card" data-tags="female armani shirt polyester"> <!-- 8 -->
+                    <div class="product-img-container">
+                        <img src="https://cdn.fynd.com/v2/falling-surf-7c8bb8/fyprod/wrkr/products/pictures/item/free/original/000000410532933008/yZtOTKD4rhN-410532933008_4.jpg"
+                            alt="shirt">
+                    </div>
+                    <div class="product-info">
+                        <h4>Women's Full Sleeves Casual Shirts</h4>
+                        <h6>A|X</h6>
+                        <p>₹13894.05</p>
+                    </div>
+                </div>
+                <div class="product-card" data-tags="female armani pants leather"> <!-- 9 -->
+                    <div class="product-img-container">
+                        <img src="https://cdn.fynd.com/v2/falling-surf-7c8bb8/fyprod/wrkr/products/pictures/item/free/original/000000410532927005/Z1wpIgGYk1x-8033923675613_1_1.jpg"
+                            alt="shirt">
+                    </div>
+                    <div class="product-info">
+                        <h4>Women Black Regular Fit Trousers</h4>
+                        <h6>A|X</h6>
+                        <p>₹17894.05</p>
+                    </div>
+                </div>
+                <div class="product-card" data-tags="female armani handbag leather"> <!-- 10 -->
+                    <div class="product-img-container">
+                        <img src="https://cdn.fynd.com/v2/falling-surf-7c8bb8/fyprod/wrkr/products/pictures/item/free/original/000000410533291001/Lv9LxHXcqv--8034149875689_2_1.jpg"
+                            alt="handbag">
+                    </div>
+                    <div class="product-info">
+                        <h4>Women's Violet Liz Shopping Bag</h4>
+                        <h6>A|X</h6>
+                        <p>₹11864.12</p>
+                    </div>
+                </div>
+                <div class="product-card" data-tags="mens calvinklein jacket polyester"> <!-- 11 -->
+                    <div class="product-img-container">
+                        <img src="https://calvinklein.scene7.com/is/image/CalvinKlein/40FM512_CEC_main?wid=1487&qlt=80%2C0&resMode=sharp2&op_usm=0.9%2C1.0%2C8%2C0&iccEmbed=0&fmt=webp"
+                            alt="Jacket">
+                    </div>
+                    <div class="product-info">
+                        <h4>Matte Bomber Jacket</h4>
+                        <h6>Calvin Klein</h6>
+                        <p>₹19864.12</p>
+                    </div>
+                </div>
+                <div class="product-card" data-tags="mens calvinklein shirt denim"> <!-- 12 -->
+                    <div class="product-img-container">
+                        <img src="https://calvinklein.scene7.com/is/image/CalvinKlein/4RD765G_57L_main?wid=1487&qlt=80%2C0&resMode=sharp2&op_usm=0.9%2C1.0%2C8%2C0&iccEmbed=0&fmt=webp"
+                            alt="shirt">
+                    </div>
+                    <div class="product-info">
+                        <h4>Classic Denim Overshirt</h4>
+                        <h6>Calvin Klein</h6>
+                        <p>₹13564.42</p>
+                    </div>
+                </div>
+                <div class="product-card" data-tags="mens calvinklein pants denim"> <!-- 13 -->
+                    <div class="product-img-container">
+                        <img src="https://calvinklein.scene7.com/is/image/CalvinKlein/4RE718G_2U1_main?wid=1487&qlt=80%2C0&resMode=sharp2&op_usm=0.9%2C1.0%2C8%2C0&iccEmbed=0&fmt=webp"
+                            alt="pants">
+                    </div>
+                    <div class="product-info">
+                        <h4>Tencel Blend 90s Straight Fit Jeans</h4>
+                        <h6>Calvin Klein</h6>
+                        <p>₹19548.22</p>
+                    </div>
+                </div>
+
+                <div class="product-card" data-tags="female prada dress polyester"> <!-- 14 -->
+                    <div class="product-img-container">
+                        <img src="https://www.prada.com/content/dam/pradabkg_products/P/P3R/P3R03/178YF0002/P3R03_178Y_F0002_S_OOO_SLF.jpg/_jcr_content/renditions/cq5dam.web.hebebed.1200.1200.jpg"
+                            alt="dress">
+                    </div>
+                    <div class="product-info">
+                        <h4>Velvet mini-dress</h4>
+                        <h6>Prada</h6>
+                        <p>₹43747.22</p>
+                    </div>
+                </div>
+                <div class="product-card" data-tags="female prada dress polyester"> <!-- 15 -->
+                    <div class="product-img-container">
+                        <img src="https://www.prada.com/content/dam/pradabkg_products/P/P3O/P3O78R/176AF0051/P3O78R_176A_F0051_S_OOO_SLF.jpg/_jcr_content/renditions/cq5dam.web.hebebed.1200.1200.jpg"
+                            alt="dress">
+                    </div>
+                    <div class="product-info">
+                        <h4>Sequin dress</h4>
+                        <h6>Prada</h6>
+                        <p>₹56847.22</p>
+                    </div>
+                </div>
+                <div class="product-card" data-tags="female prada pants denim "> <!-- 16 -->
+                    <div class="product-img-container">
+                        <img src="https://www.prada.com/content/dam/pradabkg_products/G/GFP/GFP545/18NFF01AY/GFP545_18NF_F01AY_S_OOO_SLF.jpg/_jcr_content/renditions/cq5dam.web.hebebed.1200.1200.jpg"
+                            alt="pants">
+                    </div>
+                    <div class="product-info">
+                        <h4>Washed denim jeans</h4>
+                        <h6>Prada</h6>
+                        <p>₹156847.22</p>
+                    </div>
+                </div>
+
+
+
+                <div class="product-card" data-tags="female chanel nacklaces denim "> <!-- 17 -->
+                    <div class="product-img-container">
+                        <img src="https://www.chanel.com/puls-img/c_limit,w_1400,e_sharpen:50/q_90,dpr_2.0/1744298409674-closeup01desktopjpg_7668x4320.jpg"
+                            alt="nacklaces">
+                    </div>
+                    <div class="product-info">
+                        <h4>WINGS OF CHANEL Necklace</h4>
+                        <h6>chanel</h6>
+                        <p>₹32156847.22</p>
+                    </div>
+                </div>
+
+                <div class="product-card" data-tags=" mens louisvuitton footware leather "> <!-- 18 -->
+                    <div class="product-img-container">
+                        <img src="https://in.louisvuitton.com/images/is/image/lv/1/PP_VP_L/louis-vuitton-lv-oxford-loafer--BVL01KGZ02_PM2_Front%20view.png?wid=730&hei=730"
+                            alt="footware">
+                    </div>
+                    <div class="product-info">
+                        <h4>LV Oxford Loafer</h4>
+                        <h6>Louis Vuitton</h6>
+                        <p>₹109000.00</p>
+                    </div>
+                </div>
+
+
+            </div>
+        </main>
+    </div>
+
+
+    <footer class="nostra-footer">
+        <div class="footer-container">
+
+            <div class="footer-col">
+                <h4>Promotions</h4>
+                <a href="login.html">Gift Cards</a>
+                <a href="login.html">Stores</a>
+                <a href="login.html">Store Directory</a>
+                <a href="login.html">My Nostra Rewards</a>
+                <a href="login.html">Student Discount</a>
+            </div>
+
+            <div class="footer-col">
+                <h4>Help</h4>
+                <a href="contact.html">Customer Service</a>
+                <a href="contact.html">FAQs</a>
+                <a href="contact.html">Contact Us</a>
+                <a href="contact.html">Track Order</a>
+                <a href="contact.html">Returns</a>
+                <a href="contact.html">Shipping</a>
+            </div>
+
+            <div class="footer-col">
+                <h4>About</h4>
+                <a href="#">About Nostra</a>
+                <a href="#">Careers</a>
+                <a href="#">Privacy Commitment</a>
+                <a href="#">Sustainability</a>
+            </div>
+
+            <div class="footer-col social-col">
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-x"></i></a>
+                    <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <h2 class="footer-logo-text">Nostra</h2>
+            <div class="footer-legal">
+                <p>
+                    <a href="#">Privacy Policy</a> |
+                    <a href="#">Interest Based Ads</a> |
+                    <a href="#">Terms & Conditions</a>
+                </p>
+                <p class="copyright">&copy; 2025 Nostra. Divagar All rights reserved. <span class="location"><i
+                            class="fa-solid fa-location-dot"></i> <select class="loca-la">
+                            <option value="">INDIA</option>
+                            <option value="">USA</option>
+                            <option value="">CHINA</option>
+                            <option value="">UAE</option>
+                            <option value="">UK</option>
+                        </select></span></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

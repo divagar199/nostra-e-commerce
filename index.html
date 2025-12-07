@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nostra | Elegant Fashion</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" type="image/png" href="images/myfavicon.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="logo">
+            <h1>Nostra</h1>
+        </div>
+        <div class="nav-links" id="navLinks">
+            <i class="fa-solid fa-xmark close-icon" onclick="toggleMenu()"></i>
+            <a href="index.html" class="active">Home</a>
+            <a href="collection.html">Collection</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <div class="nav-icons">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <a href="login.html"><i class="fa-regular fa-user"></i></a>
+            <i class="fa-solid fa-bag-shopping"></i>
+            <i class="fa-solid fa-bars menu-icon" onclick="toggleMenu()"></i>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <h2>AUTUMN|WINTER</h2>
+            <p>It’s never too soon to think about the new season’s looks: discover the latest styles and get inspired.
+            </p>
+            <a href="collection.html" class="btn">Shop Now</a>
+        </div>
+    </header>
+    <!-- brand tag -->
+    <section class="brands-section container">
+        <h2 class="section-title" style="text-align: left; margin-left: 10px;">Top Brands</h2>
+        <div class="brand-grid">
+            <div class="brand-item">
+                <img src="https://www.branding.news/wp-content/uploads/2017/11/armani-exchange-anagrama2.jpg"
+                    alt="Armani">
+                <p>Armani</p>
+            </div>
+            <div class="brand-item">
+                <img src="https://thumbs.dreamstime.com/b/web-192037134.jpg">
+                <p>Calvin Klein</p>
+            </div>
+            <div class="brand-item">
+                <img src="https://img.icons8.com/ios7/1200/gucci.jpg" alt="Gucci">
+                <p>Gucci</p>
+            </div>
+
+            <div class="brand-item">
+                <img src="https://www.shutterstock.com/image-vector/chanel-icon-logo-symbol-sign-600nw-2404629953.jpg"
+                    alt="Chanel">
+                <p>Chanel</p>
+            </div>
+            <div class="brand-item">
+                <img src="https://images.seeklogo.com/logo-png/61/1/prada-logo-png_seeklogo-619678.png" alt="Prada">
+                <p>Prada</p>
+            </div>
+            <div class="brand-item">
+                <img src="https://static.vecteezy.com/system/resources/previews/021/608/789/non_2x/louis-vuitton-logo-louis-vuitton-icon-with-typeface-on-white-background-free-vector.jpg"
+                    alt="Louis Vuitton">
+                <p>Louis Vuitton</p>
+            </div>
+        </div>
+    </section>
+    <!-- top banner section -->
+    <section class="banner-section container"> <!-- image right -->
+        <div class="banner-content">
+            <h2 class="banner-title">BAGS</h2>
+            <div class="banner-buttons">
+                <a href="collection.html?gender=men&category=accessories" class="btn-outline">MEN'S</a>
+                <a href="collection.html?gender=women&category=accessories" class="btn-outline">WOMEN'S</a>
+            </div>
+        </div>
+        <div class="banner-image">
+            <img src="https://cdn.fynd.com/v2/falling-surf-7c8bb8/fyprod/wrkr/company/1103/applications/6331e737cf60c4c03a2cf965/theme/pictures/free/resize-w:1024/theme-image-1741590687529.png"
+                alt="Luxury Bags">
+        </div>
+    </section>
+    <section class="banner-section banner-reverse container"> <!-- image left -->
+        <div class="banner-image">
+            <img src="https://cdn.fynd.com/v2/falling-surf-7c8bb8/fyprod/wrkr/company/1103/applications/6331e737cf60c4c03a2cf965/theme/pictures/free/resize-w:1024/theme-image-1741590520783.png"
+                alt="White Trousers">
+        </div>
+
+        <div class="banner-content">
+            <h2 class="banner-title">TROUSERS</h2>
+            <div class="banner-buttons">
+                <a href="collection.html?gender=men&category=pants" class="btn-outline">MEN'S</a>
+                <a href="collection.html?gender=women&category=pants" class="btn-outline">WOMEN'S</a>
+            </div>
+        </div>
+    </section>
+    <section class="banner-section container"> <!-- image right -->
+        <div class="banner-content">
+            <h2 class="banner-title">POLOS</h2>
+            <div class="banner-buttons">
+                <a href="collection.html?gender=men&category=accessories" class="btn-outline">MEN'S</a>
+                <a href="collection.html?gender=women&category=accessories" class="btn-outline">WOMEN'S</a>
+            </div>
+        </div>
+        <div class="banner-image">
+            <img src="https://cdn.fynd.com/v2/falling-surf-7c8bb8/fyprod/wrkr/company/1103/applications/6331e737cf60c4c03a2cf965/theme/pictures/free/resize-w:1024/theme-image-1747648949460.png"
+                alt="polo">
+        </div>
+    </section>
+    <section class="banner-section banner-reverse container"> <!-- image left -->
+        <div class="banner-image">
+            <img src="https://cdn.fynd.com/v2/falling-surf-7c8bb8/fyprod/wrkr/company/1103/applications/6331e737cf60c4c03a2cf965/theme/pictures/free/resize-w:1024/theme-image-1747639336185.jpeg"
+                alt="T-Shirts">
+        </div>
+
+        <div class="banner-content">
+            <h2 class="banner-title">T-SHIRT</h2>
+            <div class="banner-buttons">
+                <a href="collection.html?gender=men&category=pants" class="btn-outline">MEN'S</a>
+                <a href="collection.html?gender=women&category=pants" class="btn-outline">WOMEN'S</a>
+            </div>
+        </div>
+    </section>
+    <!-- scrolling categories -->
+    <section class="carousel-section">
+        <div class="container">
+            <h2 class="section-title carousel-title">Nostra News</h2>
+
+            <div class="carousel-wrapper">
+                <button class="carousel-btn prev-btn" aria-label="Previous slide">
+                    <i class="fa-solid fa-chevron-left"></i>
+                </button>
+
+                <div class="carousel-track" id="carouselTrack">
+                    <div class="carousel-item">
+                        <img src="https://www.prada.com/content/dam/pradaspa/home_page/2025/10/Holiday/pradasphere/Pradasphere_DT.jpg/_jcr_content/renditions/cq5dam.web.1680.1680.jpg"
+                            alt="Fashion Show">
+                        <p>A Winter’s Tale</p>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://www.prada.com/content/dam/pradaspa/home_page/2025/09/Modulo_SS26/Pradasphere_DT.jpg/_jcr_content/renditions/cq5dam.web.1680.1680.jpg"
+                            alt="Model Behind Scenes">
+                        <p>Prada Spring/Summer 2026 Womenswear Show</p>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://www.prada.com/content/dam/pradaspa/home_page/2025/08/Paradigme/Pradasphere_DT.jpg/_jcr_content/renditions/cq5dam.web.1680.1680.jpg"
+                            alt="Street Style">
+                        <p>Paradigame</p>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://www.prada.com/content/dam/pradaspa/home_page/2025/07/FW25/modulo_pradasphere_2/Pradasphere_DT.jpg/_jcr_content/renditions/cq5dam.web.1680.1680.jpg"
+                            alt="Accessories">
+                        <p>Prada Women’s and Men’s Fall/Winter 2025 Campaign</p>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://www.prada.com/content/dam/pradaspa/home_page/2025/02/CO_Gifts/Pradasphere/cafe_DT.jpg/_jcr_content/renditions/cq5dam.web.1680.1680.jpg"
+                            alt="Editorial Pose">
+                        <p>Prada Caffe</p>
+                    </div>
+                </div>
+
+                <button class="carousel-btn next-btn" aria-label="Next slide">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+    <!-- categories container -->
+    <section class="categories container">
+        <h2 class="section-title" style="text-align: left; margin-left: 10px;">Shop by Category</h2>
+        <div class="category-grid">
+            <div class="category-item">
+                <img src="https://www.chanel.com/images/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_590/FSH-1764872181747-001d02.jpg"
+                    alt="Women">
+                <h3>Women</h3>
+            </div>
+            <div class="category-item">
+                <img src="https://www.prada.com/content/dam/pradabkg_products/U/UGM/UGM403/18VFF0192/UGM403_18VF_F0192_S_OOO_MDD.jpg/_jcr_content/renditions/cq5dam.web.hebebed.1200.1200.jpg"
+                    alt="Men">
+                <h3>Men</h3>
+            </div>
+            <div class="category-item">
+                <img src="https://www.prada.com/content/dam/pradabkg_products/1/1BA/1BA896/2AO6F0002/1BA896_2AO6_F0002_V_EOO_SLF.jpg/_jcr_content/renditions/cq5dam.web.hebebed.1200.1200.jpg"
+                    alt="Accessories">
+                <h3>Accessories</h3>
+            </div>
+        </div>
+    </section>
+
+    <section class="best-sellers container">
+        <h2 class="section-title" style="text-align: left; margin-left: 10px;">Best Sellers</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <div class="product-img-container">
+                    <img src="https://assets-cf.armani.com/image/upload/f_auto,q_auto:best,ar_4:5,w_1350,c_fill/XW001511_AF16211_FC102_F_FW2025.jpg"
+                        alt="Cap">
+                </div>
+                <div class="product-info">
+                    <h4>A|X</h4>
+                    <p>Hat with wave-textured visor</p>
+                    <p>₹8546.06</p>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-img-container">
+                    <img src="https://assets-cf.armani.com/image/upload/f_auto,q_100/AX4619_NLP_NLC_D_SS2025.jpg"
+                        alt="Shirt">
+                </div>
+                <div class="product-info">
+                    <h4>A|X</h4>
+                    <p>Automatic Rose Gold-Tone Stainless Steel Watch</p>
+                    <p>₹25188.38</p>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-img-container">
+                    <img src="https://assets-cf.armani.com/image/upload/f_auto,q_auto:best,ar_4:5,w_1350,c_fill/XW001649_AF13876_Z0005_F_FW2025.jpg"
+                        alt="Gown">
+                </div>
+                <div class="product-info">
+                    <h4>A|X</h4>
+                    <p>Heeled ankle boots with drawstring</p>
+                    <p>₹19547.50</p>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-img-container">
+                    <img src="https://assets-cf.armani.com/image/upload/f_auto,q_auto:best,ar_4:5,w_1350,c_fill/AXG0164060_NLP_NLC_F_FW2025.jpg"
+                        alt="Necklaces">
+                </div>
+                <div class="product-info">
+                    <h4>A|X</h4>
+                    <p>Gunmetal Stainless Steel Chain Bracelet</p>
+                    <p>₹8468.04</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="brands-section container">
+        <h2 class="section-title" style="text-align: left; margin-left: 10px;">Brands</h2>
+
+        <div class="brand-grid">
+            <div class="brand-item">
+                <div class="brand-icon"><i class="fa-solid fa-a"></i></div>
+                <p>Armani</p>
+            </div>
+            <div class="brand-item">
+                <div class="brand-icon"><i class="fa-solid fa-c"></i></div>
+                <p>Calvin Klein</p>
+            </div>
+            <div class="brand-item">
+                <div class="brand-icon"><i class="fa-solid fa-g"></i></div>
+                <p>Gucci</p>
+            </div>
+
+            <div class="brand-item">
+                <div class="brand-icon"><i class="fa-solid fa-c"></i></div>
+                <p>Chanel</p>
+            </div>
+            <div class="brand-item">
+                <div class="brand-icon"><i class="fa-solid fa-p"></i></div>
+                <p>Prada</p>
+            </div>
+            <div class="brand-item">
+                <div class="brand-icon"><i class="fa-solid fa-d"></i></div>
+                <p>Dior</p>
+            </div>
+            <div class="brand-item">
+                <div class="brand-icon"><i class="fa-solid fa-l"></i></div>
+                <p>Vulttion</p>
+            </div>
+            <div class="brand-item">
+                <div class="brand-icon"><i class="fa-solid fa-d"></i></div>
+                <p>Guess</p>
+            </div>
+            <div class="brand-item">
+                <div class="brand-icon"><i class="fa-solid fa-h"></i></div>
+                <p>Hermes</p>
+            </div>
+        </div>
+
+    </section>
+
+    <footer class="nostra-footer">
+        <div class="footer-container">
+
+            <div class="footer-col">
+                <h4>Promotions</h4>
+                <a href="login.html">Gift Cards</a>
+                <a href="login.html">Stores</a>
+                <a href="login.html">Store Directory</a>
+                <a href="login.html">My Nostra Rewards</a>
+                <a href="login.html">Student Discount</a>
+            </div>
+
+            <div class="footer-col">
+                <h4>Help</h4>
+                <a href="contact.html">Customer Service</a>
+                <a href="contact.html">FAQs</a>
+                <a href="contact.html">Contact Us</a>
+                <a href="contact.html">Track Order</a>
+                <a href="contact.html">Returns</a>
+                <a href="contact.html">Shipping</a>
+            </div>
+
+            <div class="footer-col">
+                <h4>About</h4>
+                <a href="#">About Nostra</a>
+                <a href="#">Careers</a>
+                <a href="#">Privacy Commitment</a>
+                <a href="#">Sustainability</a>
+            </div>
+
+            <div class="footer-col social-col">
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-x"></i></a>
+                    <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <h2 class="footer-logo-text">Nostra</h2>
+            <div class="footer-legal">
+                <p>
+                    <a href="#">Privacy Policy</a> |
+                    <a href="#">Interest Based Ads</a> |
+                    <a href="#">Terms & Conditions</a>
+                </p>
+                <p class="copyright">&copy; 2025 Nostra. Divagar All rights reserved. <span class="location"><i
+                            class="fa-solid fa-location-dot"></i> <select class="loca-la">
+                            <option value="">INDIA</option>
+                            <option value="">USA</option>
+                            <option value="">CHINA</option>
+                            <option value="">UAE</option>
+                            <option value="">UK</option>
+                        </select></span></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

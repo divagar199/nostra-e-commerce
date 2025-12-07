@@ -1,0 +1,35 @@
+filters
+gender
+ male
+ female
+brand
+ armani
+ calvin klein
+ gucci
+ chanel
+ prada
+ dior
+ louis vuitton
+ guess
+ hermes
+category
+ shirts
+ t-shirts
+ dresses
+ pants
+ jacket
+ handbag
+ sunglases
+ necklaces
+ footware
+ watch
+ cap
+material
+ cotton
+ wool
+ linen
+ leather
+ viscose
+ polyester
+ steel
+ denim
