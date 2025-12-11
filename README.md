@@ -94,7 +94,7 @@ nostra-e-commerce/
      ```
 
 4. **Access the site**
-   - Navigate to `http://localhost:8000` (or applicable port)
+   - Navigate to `(https://divagar199.github.io/nostra-e-commerce/)` (or applicable port)
 
 ## 📦 Product Categories
 
