@@ -400,11 +400,13 @@ footer {
         display: none;
     }
     .sidebar {
-        display: flex;
+        display: none;
+        /* display: flex;
         flex-direction: row;
         gap: 10px;
         width: 100%;
-        margin-bottom: -10px;
+        margin-bottom: -10px; */
+
     }
     
     .contact-wrapper {
